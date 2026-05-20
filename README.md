@@ -1,98 +1,147 @@
-# FTI Data & AI Krisenanalyse – Müller Maschinenbau GmbH
+# FTI Data & AI Krisenanalyse - Mueller Maschinenbau GmbH
 
-## Projektüberblick
+## Projektueberblick
 
-Dieses Projekt ist eine fiktive, consulting-nahe Data-&AI-Krisenanalyse eines mittelständischen Maschinenbauunternehmens.
+Dieses Projekt ist eine fiktive, consulting-nahe Data-&AI-Krisenanalyse eines mittelstaendischen Maschinenbauunternehmens. Es zeigt einen End-to-End-Workflow von synthetischer Datengenerierung ueber Datenbereinigung, SQL-Kennzahlen und Power BI bis hin zu einer Management Summary.
 
-Die **Müller Maschinenbau GmbH** ist operativ profitabel, bindet jedoch relevante Liquidität im Working Capital. Besonders Forderungen und Lagerbestand wirken als Liquiditätstreiber. Ziel des Projekts ist es, aus simulierten Rohdaten eine nachvollziehbare Analyse aufzubauen: von Datenbereinigung über SQL-Kennzahlen bis hin zu einem Power-BI-Dashboard mit Management Summary.
+Die Mueller Maschinenbau GmbH ist operativ profitabel, bindet jedoch relevante Liquiditaet im Working Capital. Besonders Forderungen und Lagerbestand wirken als Liquiditaetstreiber. Ziel des Projekts ist es, diese Situation datenbasiert zu analysieren und managementgerecht zu visualisieren.
 
-Das Projekt dient als Portfolio-Nachweis für Rollen im Bereich **Data Analytics, AI Consulting, Digital Transformation und Business Technology Consulting**.
+Das Projekt dient als Portfolio-Nachweis fuer Rollen im Bereich Data Analytics, AI Consulting, Digital Transformation und Business Technology Consulting.
 
----
+## Aktuelle Dashboard-Version
+
+Die aktuell empfohlene Power-BI-Datei ist:
+
+`dashboards/fti_krisenanalyse_dashboard_design_color.pbix`
+
+Diese Version enthaelt das ueberarbeitete farbige Dashboard-Design mit:
+
+- farbigen Header-Bereichen
+- getoenten KPI-Karten
+- klarerer visueller Trennung zwischen Finanzuebersicht und Working Capital
+- modernerem Executive-Dashboard-Look
+- beibehaltenem fachlichen Aufbau und unveraenderten Kennzahlen
+
+## Dashboard-Versionen
+
+| Datei | Zweck |
+|---|---|
+| `dashboards/fti_krisenanalyse_dashboard.pbix` | Urspruengliche Dashboard-Version |
+| `dashboards/fti_krisenanalyse_dashboard_design_improved.pbix` | Erste Design-Verbesserung mit saubererem Layout und konsistenteren Abstaenden |
+| `dashboards/fti_krisenanalyse_dashboard_design_color.pbix` | Aktuelle Version mit verbessertem Farbkonzept |
+
+Die aelteren Dateien bleiben bewusst im Repository, damit die Design-Entwicklung nachvollziehbar bleibt.
+
+## Design-Entwicklung
+
+Die Screenshots dokumentieren, wie sich das Dashboard visuell weiterentwickelt hat.
+
+### 1. Ausgangsversion
+
+| Finanzuebersicht | Working Capital |
+|---|---|
+| ![Original Finanzuebersicht](assets/screenshots/01_original_finanzuebersicht.png) | ![Original Working Capital](assets/screenshots/02_original_working_capital.png) |
+
+### 2. Erste Layout-Verbesserung
+
+Diese Version reduziert den "plain" wirkenden Aufbau durch bessere Abstaende, klarere Visual-Gruppierung und eine ruhigere Seitenstruktur.
+
+Noch zu ergaenzende Screenshots:
+
+| Seite | Empfohlener Dateiname |
+|---|---|
+| Finanzuebersicht | `assets/screenshots/03_layout_finanzuebersicht.png` |
+| Working Capital | `assets/screenshots/04_layout_working_capital.png` |
+
+### 3. Farbige finale Version
+
+Diese Version nutzt dunklere Header-Bereiche, Akzentlinien, getoente KPI-Karten und getrennte Farbwelten fuer Finanzuebersicht und Working Capital.
+
+Noch zu ergaenzende Screenshots:
+
+| Seite | Empfohlener Dateiname |
+|---|---|
+| Finanzuebersicht | `assets/screenshots/05_color_finanzuebersicht.png` |
+| Working Capital | `assets/screenshots/06_color_working_capital.png` |
+
+## Screenshot-Hinweise
+
+So koennen neue Screenshots konsistent erstellt werden:
+
+1. PBIX-Datei in Power BI Desktop oeffnen.
+2. Linke und rechte Bearbeitungs-Panels ausblenden.
+3. Ansicht auf "An Seite anpassen" stellen.
+4. Screenshot als PNG speichern.
+5. Datei im Ordner `assets/screenshots/` mit dem passenden Namen ablegen.
+
+Wenn die vier neuen Screenshots hinzugefuegt wurden, koennen sie im Abschnitt "Design-Entwicklung" direkt als Bildvorschau eingebunden werden.
 
 ## Business-Fragestellung
 
 Das Projekt beantwortet unter anderem folgende Fragen:
 
 - Wie profitabel ist das Unternehmen operativ?
-- Wie viel Liquidität ist im Working Capital gebunden?
+- Wie viel Liquiditaet ist im Working Capital gebunden?
 - Welche Kunden verursachen hohe Forderungsvolumen?
-- Welche Forderungen sind überfällig?
+- Welche Forderungen sind ueberfaellig?
 - In welchen Produktgruppen ist besonders viel Kapital im Lager gebunden?
-- Welche Handlungsempfehlungen ergeben sich für das Management?
-
----
+- Welche Handlungsempfehlungen ergeben sich fuer das Management?
 
 ## Verwendete Technologien
 
-- **Python** für Datengenerierung und Datenbereinigung
-- **Pandas** für Transformation, Bereinigung und Validierung der Daten
-- **SQLite** als lokale relationale Datenbank
-- **SQL** für KPI-Berechnung und Analyseabfragen
-- **Power BI** für Dashboarding und Visualisierung
-- **DAX** für Measures und Working-Capital-Kennzahlen
-- **Markdown** für technische und fachliche Projektdokumentation
-
----
+- Python fuer Datengenerierung und Datenbereinigung
+- Pandas fuer Transformation, Bereinigung und Validierung
+- SQLite als lokale relationale Datenbank
+- SQL fuer KPI-Berechnung und Analyseabfragen
+- Power BI fuer Dashboarding und Visualisierung
+- DAX fuer Measures und Working-Capital-Kennzahlen
+- Markdown fuer technische und fachliche Projektdokumentation
 
 ## Projektstruktur
 
 ```text
-fti_data_ai_krisenanalyse/
-│
-├── dashboards/
-│   └── fti_krisenanalyse_dashboard.pbix
-│
-├── data/
-│   ├── raw/
-│   │   ├── forderungen.csv
-│   │   ├── kosten.csv
-│   │   ├── lagerbestand.csv
-│   │   ├── umsaetze.csv
-│   │   └── verbindlichkeiten.csv
-│   │
-│   └── clean/
-│       ├── clean_forderungen.csv
-│       ├── clean_kosten.csv
-│       ├── clean_lagerbestand.csv
-│       ├── clean_umsaetze.csv
-│       └── clean_verbindlichkeiten.csv
-│
-├── docs/
-│   ├── datenbereinigung.md
-│   ├── datenmodell.md
-│   ├── kennzahlen_erklaerung.md
-│   ├── powerbi_dashboard.md
-│   └── sql_kennzahlen.md
-│
-├── scripts/
-│   ├── generate_data.py
-│   ├── data_cleaning.py
-│   └── load_to_db.py
-│
-├── sql/
-│   ├── abfragen.sql
-│   └── kpi_berechnung.sql
-│
-├── projekt_datenbank.db
-└── README.md
+fti-data-ai-krisenanalyse/
+|
+|-- assets/
+|   |-- dashboard_finanzuebersicht.png
+|   |-- dashboard_working_capital.png
+|   |-- screenshots/
+|       |-- 01_original_finanzuebersicht.png
+|       |-- 02_original_working_capital.png
+|       |-- 03_layout_finanzuebersicht.png
+|       |-- 04_layout_working_capital.png
+|       |-- 05_color_finanzuebersicht.png
+|       |-- 06_color_working_capital.png
+|
+|-- dashboards/
+|   |-- fti_krisenanalyse_dashboard.pbix
+|   |-- fti_krisenanalyse_dashboard_design_improved.pbix
+|   |-- fti_krisenanalyse_dashboard_design_color.pbix
+|
+|-- data/
+|   |-- raw/
+|   |-- clean/
+|
+|-- docs/
+|-- scripts/
+|-- sql/
+|-- projekt_datenbank.db
+|-- README.md
 ```
-
----
 
 ## Vorgehen
 
 ### 1. Datengenerierung
 
-Für das Projekt wurden synthetische Unternehmensdaten erzeugt. Die Daten simulieren typische Tabellen eines mittelständischen Unternehmens:
+Fuer das Projekt wurden synthetische Unternehmensdaten erzeugt. Die Daten simulieren typische Tabellen eines mittelstaendischen Unternehmens:
 
-- Umsätze
+- Umsaetze
 - Kosten
 - Forderungen
 - Verbindlichkeiten
 - Lagerbestand
 
-Die Daten sind fiktiv und enthalten bewusst Datenqualitätsprobleme, um einen realistischen Analyseprozess abzubilden.
+Die Daten sind fiktiv und enthalten bewusst Datenqualitaetsprobleme, um einen realistischen Analyseprozess abzubilden.
 
 ### 2. Datenbereinigung
 
@@ -102,20 +151,20 @@ Die Rohdaten wurden mit Python und Pandas bereinigt. Dabei wurden unter anderem 
 - fehlende Werte
 - gemischte Datumsformate
 - inkonsistente Kundennamen
-- Ausreißer bei Kosten und Forderungen
+- Ausreisser bei Kosten und Forderungen
 - Power-BI-relevante Formatprobleme bei Lagerwerten
 
 Die bereinigten Daten wurden im Ordner `data/clean/` gespeichert.
 
 ### 3. Datenbank und SQL-Kennzahlen
 
-Die bereinigten CSV-Dateien wurden in eine lokale SQLite-Datenbank geladen. Anschließend wurden zentrale Finanz- und Working-Capital-Kennzahlen mit SQL berechnet.
+Die bereinigten CSV-Dateien wurden in eine lokale SQLite-Datenbank geladen. Anschliessend wurden zentrale Finanz- und Working-Capital-Kennzahlen mit SQL berechnet.
 
 ### 4. Power-BI-Dashboard
 
 Das Dashboard besteht aus zwei Analysebereichen:
 
-1. **Finanzübersicht – Operative Performance**
+1. **Finanzuebersicht - Operative Performance**
    - Umsatz
    - Kosten
    - EBITDA
@@ -124,95 +173,85 @@ Das Dashboard besteht aus zwei Analysebereichen:
    - Umsatz nach Produktgruppe
    - Top-Kunden nach Umsatz
 
-2. **Working-Capital-Analyse – Liquiditätsbindung**
+2. **Working-Capital-Analyse - Liquiditaetsbindung**
    - Forderungen
    - Lagerbestand
    - Verbindlichkeiten
    - Working Capital
    - DSO, DIO und DPO
-   - überfällige Forderungen
+   - ueberfaellige Forderungen
    - Lagerbestand nach Produktgruppe
-
 
 ## Dashboard Preview
 
-### Finanzübersicht
+### Finanzuebersicht
 
-![Finanzübersicht](assets/dashboard_finanzuebersicht.png)
+![Finanzuebersicht](assets/dashboard_finanzuebersicht.png)
 
 ### Working-Capital-Analyse
 
 ![Working Capital](assets/dashboard_working_capital.png)
 
----
-
 ## Zentrale Kennzahlen
 
 | Kennzahl | Wert |
 |---|---:|
-| Gesamtumsatz | 65.224.911 € |
-| Gesamtkosten | 44.187.005 € |
-| Materialkosten | 22.904.888 € |
-| Forderungsvolumen | 5.403.632 € |
-| Lagerbestand | 2.791.153 € |
-| Verbindlichkeiten | 1.493.071 € |
-| EBITDA | 21.037.906 € |
+| Gesamtumsatz | 65.224.911 EUR |
+| Gesamtkosten | 44.187.005 EUR |
+| Materialkosten | 22.904.888 EUR |
+| Forderungsvolumen | 5.403.632 EUR |
+| Lagerbestand | 2.791.153 EUR |
+| Verbindlichkeiten | 1.493.071 EUR |
+| EBITDA | 21.037.906 EUR |
 | EBITDA-Marge | ca. 32,26 % |
-| Working Capital | ca. 6.701.714 € |
+| Working Capital | ca. 6.701.714 EUR |
 | DSO | ca. 30,24 Tage |
 | DIO | ca. 44,48 Tage |
 | DPO | ca. 23,80 Tage |
 
-**Hinweis:** Im Dashboard wird die Kennzahl „Offene Forderungen“ als gesamtes Forderungsvolumen der Forderungstabelle verwendet. Für ein produktives Projekt müsste die Definition eindeutig zwischen gesamtem Forderungsbestand und tatsächlich offenen Forderungen nach Status getrennt werden.
-
----
+Hinweis: Im Dashboard wird die Kennzahl "Offene Forderungen" als gesamtes Forderungsvolumen der Forderungstabelle verwendet. Fuer ein produktives Projekt muesste die Definition eindeutig zwischen gesamtem Forderungsbestand und tatsaechlich offenen Forderungen nach Status getrennt werden.
 
 ## Management Summary
 
-Die Müller Maschinenbau GmbH ist auf Basis der simulierten Daten operativ profitabel. Bei einem Gesamtumsatz von rund **65,2 Mio. €** und Gesamtkosten von rund **44,2 Mio. €** ergibt sich ein EBITDA von rund **21,0 Mio. €** und eine EBITDA-Marge von rund **32,3 %**.
+Die Mueller Maschinenbau GmbH ist auf Basis der simulierten Daten operativ profitabel. Bei einem Gesamtumsatz von rund 65,2 Mio. EUR und Gesamtkosten von rund 44,2 Mio. EUR ergibt sich ein EBITDA von rund 21,0 Mio. EUR und eine EBITDA-Marge von rund 32,3 %.
 
-Trotz der positiven operativen Ergebnislage zeigt die Analyse eine relevante Kapitalbindung im Working Capital. Insgesamt sind rund **6,7 Mio. €** im Working Capital gebunden. Haupttreiber sind das Forderungsvolumen und der Lagerbestand. Gleichzeitig deutet ein DPO von rund **23,8 Tagen** darauf hin, dass Lieferanten vergleichsweise schnell bezahlt werden und dadurch Liquiditätspotenzial ungenutzt bleibt.
-
----
+Trotz der positiven operativen Ergebnislage zeigt die Analyse eine relevante Kapitalbindung im Working Capital. Insgesamt sind rund 6,7 Mio. EUR im Working Capital gebunden. Haupttreiber sind das Forderungsvolumen und der Lagerbestand. Gleichzeitig deutet ein DPO von rund 23,8 Tagen darauf hin, dass Lieferanten vergleichsweise schnell bezahlt werden und dadurch Liquiditaetspotenzial ungenutzt bleibt.
 
 ## Handlungsempfehlungen
 
 1. **Forderungsmanagement verbessern**
-   - Überfällige Forderungen priorisiert verfolgen
+   - Ueberfaellige Forderungen priorisiert verfolgen
    - Mahnprozess standardisieren
-   - Zahlungsziele und Bonitätsprüfung bei Großkunden prüfen
+   - Zahlungsziele und Bonitaetspruefung bei Grosskunden pruefen
 
 2. **Lagerbestand gezielt reduzieren**
    - Produktgruppen mit hoher Kapitalbindung analysieren
-   - Bestandsreichweiten überprüfen
+   - Bestandsreichweiten ueberpruefen
    - langsam drehende Lagerpositionen identifizieren
 
-3. **Zahlungsziele mit Lieferanten prüfen**
+3. **Zahlungsziele mit Lieferanten pruefen**
    - DPO schrittweise optimieren
-   - Skonto-Vorteile gegen Liquiditätswirkung abwägen
+   - Skonto-Vorteile gegen Liquiditaetswirkung abwaegen
    - Lieferantenkonditionen neu verhandeln
 
-4. **Management-Dashboard regelmäßig nutzen**
-   - Working-Capital-KPIs monatlich überwachen
+4. **Management-Dashboard regelmaessig nutzen**
+   - Working-Capital-KPIs monatlich ueberwachen
    - Forderungen, Lagerbestand und Verbindlichkeiten gemeinsam betrachten
-   - Maßnahmen nicht nur finanzseitig, sondern auch prozessseitig steuern
-
----
+   - Massnahmen finanzseitig und prozessseitig steuern
 
 ## Portfolio-Relevanz
 
-Dieses Projekt zeigt einen praxisnahen End-to-End-Workflow, der für Business-/Data-/AI-Consulting-Rollen relevant ist:
+Dieses Projekt zeigt einen praxisnahen End-to-End-Workflow, der fuer Business-, Data- und AI-Consulting-Rollen relevant ist:
 
-- Datenqualität erkennen und verbessern
+- Datenqualitaet erkennen und verbessern
 - Daten mit Python und Pandas bereinigen
 - strukturierte Daten in SQLite speichern
 - KPIs mit SQL berechnen
 - Kennzahlen mit Power BI visualisieren
-- technische Analyse in Management-relevante Empfehlungen übersetzen
+- technische Analyse in Management-relevante Empfehlungen uebersetzen
+- Dashboard-Design iterativ verbessern und dokumentieren
 
-Damit demonstriert das Projekt nicht nur Tool-Kenntnisse, sondern auch die Fähigkeit, Datenanalyse mit Business-Kontext und Beratungsperspektive zu verbinden.
-
----
+Damit demonstriert das Projekt nicht nur Tool-Kenntnisse, sondern auch die Faehigkeit, Datenanalyse mit Business-Kontext und Beratungsperspektive zu verbinden.
 
 ## Hinweis zur Datenbasis
 
