@@ -173,7 +173,9 @@ Das Dashboard besteht aus zwei Analysebereichen:
 
 ### Finanzuebersicht
 
-![Finanzuebersicht](assets/dashboard_finanzuebersicht.png)
+![Finanzuebersicht](assets/05_color_finanzuebersicht.png)
+
+
 
 ### Working-Capital-Analyse
 
