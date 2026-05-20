@@ -46,7 +46,6 @@ Die Screenshots dokumentieren, wie sich das Dashboard visuell weiterentwickelt h
 
 Diese Version reduziert den "plain" wirkenden Aufbau durch bessere Abstaende, klarere Visual-Gruppierung und eine ruhigere Seitenstruktur.
 
-Noch zu ergaenzende Screenshots:
 
 | Seite | Empfohlener Dateiname |
 |---|---|
@@ -57,24 +56,12 @@ Noch zu ergaenzende Screenshots:
 
 Diese Version nutzt dunklere Header-Bereiche, Akzentlinien, getoente KPI-Karten und getrennte Farbwelten fuer Finanzuebersicht und Working Capital.
 
-Noch zu ergaenzende Screenshots:
 
 | Seite | Empfohlener Dateiname |
 |---|---|
 | Finanzuebersicht | `assets/screenshots/05_color_finanzuebersicht.png` |
 | Working Capital | `assets/screenshots/06_color_working_capital.png` |
 
-## Screenshot-Hinweise
-
-So koennen neue Screenshots konsistent erstellt werden:
-
-1. PBIX-Datei in Power BI Desktop oeffnen.
-2. Linke und rechte Bearbeitungs-Panels ausblenden.
-3. Ansicht auf "An Seite anpassen" stellen.
-4. Screenshot als PNG speichern.
-5. Datei im Ordner `assets/screenshots/` mit dem passenden Namen ablegen.
-
-Wenn die vier neuen Screenshots hinzugefuegt wurden, koennen sie im Abschnitt "Design-Entwicklung" direkt als Bildvorschau eingebunden werden.
 
 ## Business-Fragestellung
 
