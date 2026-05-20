@@ -98,6 +98,7 @@ fti-data-ai-krisenanalyse/
 |       |-- 04_layout_working_capital.png
 |       |-- 05_color_finanzuebersicht.png
 |       |-- 06_color_working_capital.png
+|       |-- README.md
 |
 |-- dashboards/
 |   |-- fti_krisenanalyse_dashboard.pbix
