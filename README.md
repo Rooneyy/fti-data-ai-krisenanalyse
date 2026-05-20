@@ -47,20 +47,20 @@ Die Screenshots dokumentieren, wie sich das Dashboard visuell weiterentwickelt h
 Diese Version reduziert den "plain" wirkenden Aufbau durch bessere Abstaende, klarere Visual-Gruppierung und eine ruhigere Seitenstruktur.
 
 
-| Seite | Empfohlener Dateiname |
+| Finanzuebersicht | Working Capital |
 |---|---|
-| Finanzuebersicht | `assets/screenshots/03_layout_finanzuebersicht.png` |
-| Working Capital | `assets/screenshots/04_layout_working_capital.png` |
+| ![Layout Finanzuebersicht](assets/screenshots/03_layout_finanzuebersicht.png) |
+| ![Layout Working Capital](assets/screenshots/04_layout_working_capital.png) |
 
 ### 3. Farbige finale Version
 
 Diese Version nutzt dunklere Header-Bereiche, Akzentlinien, getoente KPI-Karten und getrennte Farbwelten fuer Finanzuebersicht und Working Capital.
 
 
-| Seite | Empfohlener Dateiname |
+| Finanzuebersicht | Working Capital |
 |---|---|
-| Finanzuebersicht | `assets/screenshots/05_color_finanzuebersicht.png` |
-| Working Capital | `assets/screenshots/06_color_working_capital.png` |
+| ![Color Finanzuebersicht](assets/screenshots/05_color_finanzuebersicht.png) |
+| ![Color Working Capital](assets/screenshots/06_color_working_capital.png) |
 
 
 ## Business-Fragestellung
